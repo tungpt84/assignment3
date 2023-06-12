@@ -1,0 +1,52 @@
+@media only screen and (max-width: 767px) {
+  /* ------NAVBAR------ */
+  .avatar-nav {
+    display: none;
+  }
+  .nav-items {
+    flex-direction: column;
+    text-align: start;
+    border: none;
+  }
+  .nav-items a {
+    padding: 10px;
+    border-left: none;
+  }
+  .nav-items a:nth-child(2) {
+    border-right: none;
+  }
+  .nav-items a:nth-child(5) {
+    border-right: none;
+  }
+  .text-banner {
+    font-size: 16px;
+    top: 15%;
+  }
+  /* CHỨNG CHỈ & GIẢI THƯỞNG */
+  .cer-content1 {
+    padding-bottom: 30px;
+  }
+  .cer-content2 {
+    padding-top: 50px;
+    border-left: none;
+    border-top: 2px solid #d6c08d;
+  }
+  /* BẢNG DỰ ÁN */
+  .prj-info {
+    padding-top: 20px;
+  }
+  .prj-cv div {
+    padding-bottom: 10px;
+  }
+  /* DIGITAL MOBLE*/
+  .digital-icon {
+    text-align: center;
+  }
+  .border-cv {
+    border-right: none;
+    border-bottom: 15px solid blue;
+  }
+  .border-cv {
+    height: 100%;
+  }
+}

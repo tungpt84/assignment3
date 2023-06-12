@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* phàn navbar */
+  .avatar-nav {
+    min-width: 50px;
+  }
+  .avatar {
+    display: none;
+  }
+  .box-border {
+    margin-top: 20px;
+  }
+  /* DỰ ÁN */
+  .prj {
+    font-size: 15px;
+  }
+
+  /* DIGITAL TABLE*/
+  .digital-icon {
+    text-align: center;
+    align-content: center;
+  }
+  .border-cv {
+    border-right: none;
+    border-bottom: 15px solid blue;
+  }
+  .border-cv {
+    height: 100%;
+  }
+}

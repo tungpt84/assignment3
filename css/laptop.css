@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+.icon {
+  color: #0abde3;
+}
+.section-title {
+  font-weight: bold;
+  padding: 20px 0;
+}
+/* -------BANNER------ */
+.avatar-banner {
+  position: relative;
+  filter: brightness(60%);
+  box-shadow: 1px 1px 5px #d0d0d0;
+}
+.text-banner {
+  text-align: center;
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.text-banner span {
+  color: #ddd;
+}
+/* ----------NAVBAR--------- */
+.nav-items {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #d0d0d0;
+}
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+  border-left: 1px solid #d0d0d0;
+}
+.nav-items a:nth-child(2) {
+  border-right: 1px solid #d0d0d0;
+}
+.nav-items a:nth-child(5) {
+  border-right: 1px solid #d0d0d0;
+}
+
+.nav-items a:hover {
+  color: orange;
+  align-items: center;
+  transition: 0.3s;
+}
+.avatar-nav {
+  position: relative;
+  min-width: 200px;
+}
+.avatar {
+  position: absolute;
+  display: flex;
+  transform: translate(50%, -50%);
+  top: 40%;
+  left: -20%;
+  z-index: 1;
+}
+.img-nav {
+  width: 140px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+/*------MTNN & TT CÁ NHÂN--------- */
+#info-me {
+  background-color: rgb(238, 235, 235);
+  position: relative;
+}
+.info span {
+  font-weight: 600;
+}
+.ul {
+  position: relative;
+}
+.close-info {
+  color: #0abde3;
+  font-size: 25px;
+  position: absolute;
+  top: 100px;
+  right: 20%;
+  cursor: pointer;
+}
+/* -------TẠO HIỆU ỨNG ANIMATION------- */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* TẠO SLIDE CHO PHẦN MTNN & TT CÁ NHÂN */
+.text-slide {
+  animation: slideInFromLeft 1s ease-in;
+}
+.slide-info {
+  animation: slideInFromRight 1s ease-in;
+}
+/* ẨN TT CÁ NHÂN ĐẾN KHI SUBMIT EMAIL*/
+.info {
+  list-style: none;
+  display: none;
+}
+.btn-info {
+  color: white;
+  font-weight: bold;
+  background-color: #0dcaf0;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#email {
+  width: 80%;
+  padding: 5px 0 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #6e6e6f;
+  outline: none;
+}
+#email:hover {
+  border: 1px solid #0dcaf0;
+  box-shadow: 0 0 3px 0 #0dcaf0;
+  transition: all 0.3s;
+}
+.submit {
+  border: none;
+  outline: none;
+  width: 80px;
+  padding: 5px;
+  background-color: #16a3ce;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #056684;
+  color: white;
+  transition: all 0.5s;
+}
+
+/* ------SET BOX INFO KN-HV-HD------- */
+@media only screen and (min-width: 992px) {
+  .box-info {
+    display: flex;
+    width: 100%;
+  }
+}
+.ic {
+  color: #b8b7b7;
+}
+.showcase {
+  border: 1px solid #d0d0d0;
+  flex: 1;
+  margin: 20px 14px;
+  box-shadow: 1px 1px 5px #d0d0d0;
+  position: relative;
+  align-content: start;
+}
+.showcase:hover {
+  box-shadow: 0 0 5px 0 #6e6e6f;
+  transition: all 0.5s;
+}
+.showcase:hover .view-more,
+.showcase:hover .view-less {
+  visibility: visible;
+}
+.box-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.box-icon {
+  font-size: 40px;
+}
+.job-item {
+  position: relative;
+  margin-top: 10px;
+}
+.time {
+  padding: 5px 0;
+  font-style: italic;
+}
+.job-text p {
+  margin-bottom: 0;
+}
+.time-now {
+  color: white;
+  background-color: #0abde3;
+  border-radius: 10px;
+  width: 25px;
+  padding: 3px 10px;
+}
+.year {
+  color: white;
+  font-weight: bold;
+  background-color: #0abde3;
+  border-radius: 10px;
+  width: 25px;
+  padding: 3px 10px;
+}
+/* -----SET ICON IN BOX SỞ THÍCH ------*/
+.int-icon p {
+  padding: 10px 0;
+}
+.int-icon i {
+  color: #0abde3;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+  border: 1px solid #0abde3;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* -----SET BOX NN & KN---- */
+.showcase-text span {
+  margin-bottom: 15px;
+}
+.line-1 {
+  background-color: #0abde3;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  margin-right: 20px;
+}
+.line-2 {
+  background-color: rgb(201, 195, 195);
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  margin-right: 20px;
+}
+
+/* ẨN THÔNG TIN ĐẾN KHI ẤN VIEWMORE */
+.text-inf {
+  display: none;
+}
+.view-more,
+.view-less {
+  background: #eded44;
+  width: 120px;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #d0d0d0;
+  margin-left: 10px;
+  visibility: hidden;
+}
+
+/* -----SET CHỨNG CHỈ & GIẢI THƯỞNG------- */
+.cer-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+.cer-info p {
+  margin-bottom: 5px;
+}
+.cer-info2 {
+  border-left: 2px solid #d6c08d;
+}
+
+.cer-border {
+  border-top: 2px solid #d6c08c;
+}
+
+/* ---SET BẢNG DỰ ÁN --- */
+
+.prj {
+  border: 1px solid #d0d0d0;
+  box-shadow: 1px 1px 5px #d0d0d0;
+}
+.title-prj {
+  font-size: 18px;
+  font-weight: 300;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+tr {
+  border-top: 1px solid #d0d0d0;
+}
+td {
+  border-top: 1px solid #d0d0d0;
+  padding: 10px;
+  width: 70%;
+}
+td:first-child {
+  vertical-align: top;
+  width: 30%;
+  padding-left: 20px;
+}
+.title-prj a {
+  text-decoration: none;
+  color: black;
+}
+.title-prj a:hover {
+  color: orange;
+  transition: 0.2s;
+}
+/* -----PHẦN FOOTTER-------*/
+
+.contact i {
+  font-size: 20px;
+}
+.contact a {
+  justify-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: normal;
+}
+.contact a:hover {
+  transition: 0.3s;
+  color: rgb(244, 100, 100);
+}
+
+/* ----------PHẦN DIGITAL-CV------------*/
+.prj {
+  transition: transform 0.2s ease-in;
+}
+.prj:hover {
+  transform: translateY(-10px);
+}
+.digital-cv {
+  background-color: #f0f8ff;
+}
+.title-cv {
+  color: blue;
+  border-bottom: 1px solid grey;
+}
+.icon-timeline {
+  display: flex;
+  color: white;
+  background-color: #9e88ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+}
+h5 {
+  margin-bottom: 0;
+}
+.digital-content > div {
+  font-size: 15px;
+}
+.content {
+  border-bottom: 2px dotted lightblue;
+}
+.digital-cv {
+  border: 20px solid blue;
+}
+.border-cv {
+  border-right: 15px solid blue;
+}
+.border-cv1 {
+  border-bottom: 15px solid blue;
+}
+.border-cv1 {
+  height: 60%;
+}
+.submit a {
+  text-decoration: none;
+  color: white;
+}
