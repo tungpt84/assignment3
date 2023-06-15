@@ -176,7 +176,6 @@ body {
 .showcase {
   border: 1px solid #d0d0d0;
   flex: 1;
-  margin: 20px 14px;
   box-shadow: 1px 1px 5px #d0d0d0;
   position: relative;
   align-content: start;
